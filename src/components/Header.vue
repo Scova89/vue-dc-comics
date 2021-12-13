@@ -99,8 +99,14 @@ export default {
 
             a{
                 text-decoration: none;
-                margin: 0 15px;
+                margin-left: 20px;
                 color: rgb(88 82 77);
+                padding-bottom: 30px;
+
+                &:hover{
+                    border-bottom: 5px solid rgb(2 130 249);
+                    color: rgb(2 130 249);
+                }
             }
         }
     }
