@@ -1,1 +1,20 @@
-@import url(./partials/variables.scss);
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+// reset
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// containers
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+// body
+body{
+    font-family: 'Bebas Neue', cursive;
+}

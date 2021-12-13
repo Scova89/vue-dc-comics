@@ -1,14 +1,17 @@
 <template>
   <header>
-      <div class="logo">
+      <div class="container">
+        <div class="logo">
           <img src="../assets/img/dc-logo.png" alt="">
+        </div>
+      
+        <nav>
+          <ul>
+            <li v-for="(link, index) in links" :key="index"><a :href="link.url">{{link.text}}</a></li>
+          </ul>
+        </nav>
       </div>
       
-      <nav>
-          <ul>
-              <li v-for="(link, index) in links" :key="index"><a :href="link.url">{{link.text}}</a></li>
-          </ul>
-      </nav>
   </header>
 </template>
 
@@ -39,10 +42,31 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
     header{
+        .container{
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+
+            img{
+                width: 70%;
+            }
+        }
+    }
+
+    nav{
+        ul{
+            display: flex;
+            list-style: none;
+            
+
+            a{
+                text-decoration: none;
+                margin: 0 10px;
+            }
+        }
     }
 
 </style>
