@@ -36,6 +36,41 @@ export default {
                     url: "#",
                     current: false,
                 },
+                {
+                    text: "tv",
+                    url: "#",
+                    current: false,
+                },
+                {
+                    text: "games",
+                    url: "#",
+                    current: false,
+                },
+                {
+                    text: "collectibles",
+                    url: "#",
+                    current: false,
+                },
+                {
+                    text: "videos",
+                    url: "#",
+                    current: false,
+                },
+                {
+                    text: "fans",
+                    url: "#",
+                    current: false,
+                },
+                {
+                    text: "news",
+                    url: "#",
+                    current: false,
+                },
+                {
+                    text: "shop",
+                    url: "#",
+                    current: false,
+                },
             ]
         }
     }
@@ -64,7 +99,8 @@ export default {
 
             a{
                 text-decoration: none;
-                margin: 0 10px;
+                margin: 0 15px;
+                color: rgb(88 82 77);
             }
         }
     }
