@@ -1,7 +1,7 @@
 <template>
 <div class="container">
     <div class="main-sup">
-        <p>--Contents goes here--</p>
+        <Fumetti/>
     </div>
     <div class="main-inf">
         <ul>
@@ -14,8 +14,12 @@
 </template>
 
 <script>
+import Fumetti from './sections/Fumetti.vue';
 export default {
     name: 'Main',
+    components: {
+        Fumetti
+    },
     data () {
         return {
             links: [
