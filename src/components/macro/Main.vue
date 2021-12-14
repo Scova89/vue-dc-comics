@@ -5,7 +5,8 @@
     </div>
     <div class="main-inf">
         <ul>
-            <li v-for="(link, index) in links" :key="index"><a :href="link.url"><img :src="link.icon" alt="">{{link.text}}</a></li>
+            <li v-for="(link, index) in links" :key="index">
+                <a :href="link.url"><img :src="link.icon" alt=""><span>{{link.text}}</span></a></li>
         </ul>
     </div>
 </div>
@@ -19,27 +20,31 @@ export default {
         return {
             links: [
                 {
-                    icon: "./img/buy-comics-digital-comics.png",
+                    icon: require("../../assets/img/buy-comics-digital-comics.png"),
                     text: "digital comics",
                     url: "#",
                     current: false,
                 },
                 {
+                    icon: require("../../assets/img/buy-comics-merchandise.png"),
                     text: "dc merchandise",
                     url: "#",
                     current: false,
                 },
                 {
+                    icon: require("../../assets/img/buy-comics-subscriptions.png"),
                     text: "subscription",
                     url: "#",
                     current: false,
                 },
                 {
+                    icon: require("../../assets/img/buy-comics-shop-locator.png"),
                     text: "comic shop locator",
                     url: "#",
                     current: false,
                 },
                 {
+                    icon: require("../../assets/img/buy-dc-power-visa.svg"),
                     text: "dc power visa",
                     url: "#",
                     current: false,
@@ -64,25 +69,42 @@ export default {
 
     .main-inf{
         background-color: rgb(2 130 249);
+        height: 200px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
 
         ul{
             display: flex;
             list-style: none;
-            justify-content: space-evenly;
-            padding: 50px;
+            
+            
 
-            a{
+            li{
+                
+            
+                a{
                 text-decoration: none;
                 color: white;
-                padding-bottom: 30px;
+                padding: 0 30px;
+                
+                    span{
+                        font-family: Arial, Helvetica, sans-serif;
+                        text-transform: uppercase;
+                        font-size: 9pt;
+                    }
 
-                img{
-                    height: 50px;
-                    object-fit: cover;
-                }
+                    img{
+                        height: 40px;
+                        margin-right: 10px;
+                        object-fit: cover;
+                    }
 
                 
+                }
             }
+
+            
         }
     }
 
