@@ -1,6 +1,12 @@
 <template>
     <div class="container">
         <div class="footer-sup">
+            <div class="list-container">
+                
+            </div>
+            <div class="logo-container">
+                <img src="../../assets/img/dc-logo-bg.png" alt="dc-logo-bg">
+            </div>
             
         </div>
 
