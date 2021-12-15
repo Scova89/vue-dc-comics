@@ -23,7 +23,7 @@
                 </ul>
 
                 <ul class="sites">
-                    <h2>dc</h2>
+                    <h2>sites</h2>
                     <li v-for="(site, index) in sites" :key="index">
                         <a :href="site.url">{{site.text}}</a>
                     </li>
@@ -31,7 +31,7 @@
             </div>
 
             <div class="logo-container">
-                <img src="../../assets/img/dc-logo-bg.png" alt="dc-logo-bg">
+            
             </div>
             
         </div>
@@ -173,6 +173,7 @@ export default {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
 
         .list-container{
             
@@ -200,12 +201,21 @@ export default {
 
         }
 
+        .logo-container{
+            width: 50%;
+            height: 100%;
+            background-image: url(../../assets/img/dc-logo-bg.png);
+            background-size: cover;
+            background-position-y: center;
+            
+        }
         
     }
 
     .footer-inf{
         height: 100px;
         background-color: hsl(0deg 0% 19%);
+        
     }
 
 </style>
