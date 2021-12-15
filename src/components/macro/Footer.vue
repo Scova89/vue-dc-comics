@@ -37,7 +37,16 @@
         </div>
 
         <div class="footer-inf">
-            
+            <button>sign-up now!</button>
+            <div class="social-container">
+                <h2>follow us</h2>
+                <ul>
+                    <li v-for="(social, index) in socials" :key="index">
+                        <a :href="social.url"><img :src="social.icon" alt=""></a>
+                    </li>
+                </ul>
+                
+            </div>
         </div>
     </div>
   
@@ -159,7 +168,31 @@ export default {
                     text: "DC Power Visa",
                     url: "#",
                 },
+            ],
+
+            socials: [
+                {
+                    icon: require("../../assets/img/footer-facebook.png"),
+                    url: "#",
+                },
+                {
+                    icon: require("../../assets/img/footer-twitter.png"),
+                    url: "#",
+                },
+                {
+                    icon: require("../../assets/img/footer-youtube.png"),
+                    url: "#",
+                },
+                {
+                    icon: require("../../assets/img/footer-pinterest.png"),
+                    url: "#",
+                },
+                {
+                    icon: require("../../assets/img/footer-periscope.png"),
+                    url: "#",
+                },
             ]
+
         }
     }
 }
@@ -213,9 +246,40 @@ export default {
     }
 
     .footer-inf{
+        padding: 0 30px;
         height: 100px;
         background-color: hsl(0deg 0% 19%);
-        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button{
+            padding: 10px 20px;
+            background-color: hsl(0deg 0% 19%);
+            border: 2px solid rgb(2 130 249);
+            cursor: pointer;
+            color: white;
+            text-transform: uppercase;
+        }
+
+
+        .social-container{
+            display: flex;
+            align-items: center;
+
+            h2{
+                color: rgb(2 130 249);
+            }
+
+            ul{
+                display: flex;
+                padding: 0 10px;
+
+                li{
+                    margin-left: 10px;
+                }
+            }
+        }
     }
 
 </style>
