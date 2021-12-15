@@ -94,11 +94,9 @@ export default {
     nav{
         ul{
             display: flex;
-            list-style: none;
             
 
             a{
-                text-decoration: none;
                 margin-left: 20px;
                 color: rgb(88 82 77);
                 padding-bottom: 30px;

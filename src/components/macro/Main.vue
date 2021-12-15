@@ -80,15 +80,9 @@ export default {
 
         ul{
             display: flex;
-            list-style: none;
-            
-            
-
-            li{
-                
             
                 a{
-                text-decoration: none;
+                
                 color: white;
                 padding: 0 30px;
                 
@@ -102,11 +96,12 @@ export default {
                         height: 40px;
                         margin-right: 10px;
                         object-fit: cover;
+                        vertical-align: middle;
                     }
 
                 
                 }
-            }
+            
 
             
         }
